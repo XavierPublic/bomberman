@@ -1,10 +1,11 @@
 {
   "name": "game-perso",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bomberman multijoueur en Node.js avec Socket.IO",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/XavierPublic/bomberman#readme",
   "dependencies": {
-    "game-perso": "file:"
+    "game-perso": "file:",
+    "express": "^4.18.0",
+    "socket.io": "^4.7.2"
   }
 }
