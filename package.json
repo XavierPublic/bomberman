@@ -1,0 +1,22 @@
+{
+  "name": "game-perso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierPublic/bomberman.git"
+  },
+  "author": "XavierPublic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XavierPublic/bomberman/issues"
+  },
+  "homepage": "https://github.com/XavierPublic/bomberman#readme",
+  "dependencies": {
+    "game-perso": "file:"
+  }
+}
