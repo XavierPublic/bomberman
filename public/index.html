@@ -6,8 +6,46 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="gameCanvas" width="600" height="400"></canvas>
+  <div id="menu" class="menu-container">   
+    <svg width="993" height="768" viewBox="0 0 993 768" xmlns="http://www.w3.org/2000/svg">
+    <!-- Image de fond -->
+    <image href="images/wallpaper_game.PNG" width="993" height="768" />
+
+    <!-- Bouton Story -->
+    <polygon points="262,607 262,670 399,680 395,620"
+            class="menu-zone"
+            onclick="onStory()" />
+
+    <!-- Bouton How to Play -->
+    <polygon points="355,610 345,540 595,535 600,580"
+            class="menu-zone"
+            onclick="onHowToPlay()" />
+
+    <!-- Bouton Highscores -->
+    <polygon points="435,605 647,595 650,655 415,680"
+            class="menu-zone"
+            onclick="onHighscores()" />
+
+    <!-- Bouton Play -->
+    <polygon points="645,555 794,555 794,630 645,630"
+            class="menu-zone"
+            onclick="onPlay()" />
+    </svg>
+  </div>
+  <div id="game">
+    <!-- Ton jeu ici -->
+      <canvas id="gameCanvas" hidden width="1280" height="720">
+        <image href="images/patron.png" width="1280" height="720" />
+      </canvas>
+  </div>
   <script src="/socket.io/socket.io.js"></script>
   <script src="game.js"></script>
+  <script src="images.js"></script>
+  <script src="movements.js"></script>
+  <script src="menu.js"></script>
+  <audio id="themeMusic" autoplay loop>
+    <source src="audio/Boo or BOOM Level Theme.mp3" type="audio/mpeg">
+    Ton navigateur ne supporte pas l'audio.
+  </audio>
 </body>
 </html>

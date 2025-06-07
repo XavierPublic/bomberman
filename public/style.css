@@ -1,11 +1,28 @@
 body {
-  margin: 0;
-  background: #222;
+      margin: 0;
+      background: black;
+    }
+svg {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.menu-zone {
+  fill: transparent;
+  stroke: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.menu-zone:hover {
+  stroke: white;
+  stroke-width: 2;
+  fill: rgba(255, 255, 255, 0.1);
+}
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
-canvas {
-  display: block;
-  margin: auto;
-  background: #444;
-  border: 2px solid white;
+.fade-in {
+  opacity: 1;
 }
